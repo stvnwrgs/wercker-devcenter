@@ -57,7 +57,7 @@ It is the convention to not include the `database.yml` file in your repository. 
 
 ## Creating your wercker.yml file
 
-The `wercker.yml` file helps you define any services you might need for your application such as databases and queues. We will leverage it to set up Postgres. Read more on the wercker.yml file and its possibilities [here](http://devcenter.wercker.com/articles/werckeryml/). Create a `wercker.yml` file with the following contents (we will go over it, inn a bit):
+The `wercker.yml` file helps you define any services you might need for your application such as databases and queues. We will leverage it to set up Postgres. Read more on the wercker.yml file and its possibilities [here](/articles/werckeryml/). Create a `wercker.yml` file with the following contents (we will go over it, inn a bit):
 
 	box: wercker/ubuntu12.04-ruby2.0.0
     services:
@@ -117,7 +117,7 @@ This will set up a wizard that will guide you through subsequent steps needed to
 
 ## Adding your application to wercker
 
-Wercker comes with a command line interface (CLI) that will help you in setting up your applications with wercker. It is a Python program that can be installed via `pip install wercker`. Please see the [specific CLI documentation](/articles/cli "The wercker command line interface") for more. Running `wercker create` will add your application to wercker and set up your Heroku deploy target. You can also add your project via the [web interface](http://devcenter.wercker.com/articles/gettingstarted/web.html).
+Wercker comes with a command line interface (CLI) that will help you in setting up your applications with wercker. It is a Python program that can be installed via `pip install wercker`. Please see the [specific CLI documentation](/articles/cli "The wercker command line interface") for more. Running `wercker create` will add your application to wercker and set up your Heroku deploy target. You can also add your project via the [web interface](/articles/gettingstarted/web.html).
 
 	$ wercker create
 	Searching for git remote information...

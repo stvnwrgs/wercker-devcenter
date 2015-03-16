@@ -9,7 +9,7 @@ find guides specific to PHP below.
 
 ## Guides
 
-* [Getting started with PHP and wercker](http://devcenter.wercker.com/articles/languages/php/gettingstarted-php.html)
+* [Getting started with PHP and wercker](/articles/languages/php/gettingstarted-php.html)
 
 ## Sample application
 

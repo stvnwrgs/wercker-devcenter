@@ -121,7 +121,7 @@ We see *three* functions; one to setup our unittest, one to tear it down again a
 
 ### Creating our wercker.yml file
 
-Before we add our application to wercker there is one more thing we should do, which is setting up our build pipeline in such a way that wercker knows how to execute it. We do this through the creation of a *wercker.yml* file. For more information on wercker.yml see the [section](http://devcenter.wercker.com/articles/werckeryml/) on our developer center.
+Before we add our application to wercker there is one more thing we should do, which is setting up our build pipeline in such a way that wercker knows how to execute it. We do this through the creation of a *wercker.yml* file. For more information on wercker.yml see the [section](/articles/werckeryml/) on our developer center.
 
 In your project folder create a file called `wercker.yml` with the following contents:
 
@@ -136,7 +136,7 @@ build:
           name: flask tests
           code: python app_test.py
 ```
-Lets briefly go through this file. First, you'll see the `box` definition that says `wercker/python`. This tells wercker that we want to run our code in a Python box (which makes total sense!). By default this [box](https://github.com/wercker/box-python) runs Python version 2.7.3. Next, we use the `services` clause to define that we want to make use of Redis on wercker by specifying `wercker/redis`. You can read more about other services such as MySQL, Postgres and RabbitMQ on the services section at our [dev center](http://devcenter.wercker.com/articles/services/). In return for specifying the `wercker/redis` service, we get several environment variables. We only need one of these environment variables; `WERCKER_REDIS_HOST` that we used in our `app.py` above for setting up our Redis connection.
+Lets briefly go through this file. First, you'll see the `box` definition that says `wercker/python`. This tells wercker that we want to run our code in a Python box (which makes total sense!). By default this [box](https://github.com/wercker/box-python) runs Python version 2.7.3. Next, we use the `services` clause to define that we want to make use of Redis on wercker by specifying `wercker/redis`. You can read more about other services such as MySQL, Postgres and RabbitMQ on the services section at our [dev center](/articles/services/). In return for specifying the `wercker/redis` service, we get several environment variables. We only need one of these environment variables; `WERCKER_REDIS_HOST` that we used in our `app.py` above for setting up our Redis connection.
 
 Finally, you can see the `build` section, which contains two steps. First, the `pip-install` buildsteps that wraps the `pip install -r requirements.txt` command. Second, a custom buildstep defined via the `script` clause (a simple bash command). The step is named `flask tests` and runs the unit test that we previously created. You can leverage the custom step for any script you want to execute, for instance to *minify* your javascript or to compile your *sass* assets.
 
@@ -153,7 +153,7 @@ Now lets get started with wercker!
 
 We are now ready to add our repository to wercker so we can deploy safely when we create and push out new functionality for our application. Again make sure you have a wercker account, [sign up is free and easy](https://app.wercker.com/users/new/)!
 
-After you have signed up, make sure you connect either your GitHub or Bitbucket account. Next you could add your repository throught the web interface by clicking the `add application button`. However, wercker also comes with a [command line interface](http://devcenter.wercker.com/articles/cli/) which is written in Python. As we're already developing a Python application we are going to use the `CLI` to add it to wercker.
+After you have signed up, make sure you connect either your GitHub or Bitbucket account. Next you could add your repository throught the web interface by clicking the `add application button`. However, wercker also comes with a [command line interface](/articles/cli/) which is written in Python. As we're already developing a Python application we are going to use the `CLI` to add it to wercker.
 
 The command line interface can be installed by running:
 

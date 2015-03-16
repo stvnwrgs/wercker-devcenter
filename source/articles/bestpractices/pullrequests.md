@@ -13,7 +13,7 @@ inter-repository pull-requests. Another scenario is when a collaborator
 sends a pull request of a fork; this pull request will be built and the result will be set in your own repository.
 
 This article is also available on our [dev
-center](http://devcenter.wercker.com/articles/bestpractices/pullrequests.html)
+center](/articles/bestpractices/pullrequests.html)
 
 ![image](http://f.cl.ly/items/261g3H47283U3t361k1P/IMG_0547.JPG)
 

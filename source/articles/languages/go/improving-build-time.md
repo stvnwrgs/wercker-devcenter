@@ -50,7 +50,7 @@ The `go get` of future builds could be improved if this workspace is shared.
 I added a script
 [step](http://blog.wercker.com/2013/07/23/Spotlight-on-pipeline-steps.html)
 to the end of my
-[wercker.yml](http://devcenter.wercker.com/articles/werckeryml/) that rsync's the Go full workspace, but excludes the source directory.
+[wercker.yml](/articles/werckeryml/) that rsync's the Go full workspace, but excludes the source directory.
 
 ```yaml
   - script:

@@ -126,7 +126,7 @@ View our Campfire step in the [wercker directory](https://app.wercker.com/#appli
 <a id="email"></a>
 ## Email
 
-To make use of the [Email-Notify step](https://app.wercker.com/#applications/52b3132e0a0076c9780036ff/tab/details) which we've open sourced [here](https://github.com/wercker/step-email-notify), you would create a [wercker.yml](http://devcenter.wercker.com/articles/werckeryml/) file in the following way:
+To make use of the [Email-Notify step](https://app.wercker.com/#applications/52b3132e0a0076c9780036ff/tab/details) which we've open sourced [here](https://github.com/wercker/step-email-notify), you would create a [wercker.yml](/articles/werckeryml/) file in the following way:
 
 ``` yaml
 box: wercker/ruby

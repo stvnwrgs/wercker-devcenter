@@ -12,7 +12,7 @@ yourself by reading the [introduction](/articles/introduction/), after which you
 
 We have open sourced this documentation on [GitHub](https://github.com/wercker/wercker-devcenter), feel free to improve upon it through pull requests.
 
-You can find the awesome people who have already contributed [here](http://devcenter.wercker.com/articles/contributors.html).
+You can find the awesome people who have already contributed [here](/articles/contributors.html).
 
 -------
 

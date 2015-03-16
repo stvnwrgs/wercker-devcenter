@@ -118,7 +118,7 @@ Let me help you! Just [tweet me](http://twitter.com/pjvds) or sent me an e-mail 
 
 * You can learn more from [my wercker.yml file](https://github.com/pjvds/born2code.net/blob/master/wercker.yml).
 * See my [own personal blog, born2code.net,](https://app.wercker.com/#project/5198a619a4dd999717000331) at wercker.
-* More about the wercker.yml can be found at the [wercker devcenter](http://devcenter.wercker.com/articles/werckeryml/).
+* More about the wercker.yml can be found at the [wercker devcenter](/articles/werckeryml/).
 
 -------
 
