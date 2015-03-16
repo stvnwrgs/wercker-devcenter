@@ -49,7 +49,7 @@ We also immediately include a `script` clause that calls `mocha` (exexuted throu
 
 ### Defining our wercker.yml
 
-The [wercker.yml](http://devcenter.wercker.com/articles/werckeryml/) file declares our build and deployment pipeline. We also use it to define any services, in this case [MongoDB](http://mongodb.org), we might need. Read more on services at our [dev center](http://devcenter.wercker.com/articles/services/). Make sure your `wercker.yml` looks as follows:
+The [wercker.yml](/articles/werckeryml/) file declares our build and deployment pipeline. We also use it to define any services, in this case [MongoDB](http://mongodb.org), we might need. Read more on services at our [dev center](/articles/services/). Make sure your `wercker.yml` looks as follows:
 
 ``` yaml
 box: wercker/nodejs
@@ -63,7 +63,7 @@ build:
     # A step that executes `npm test` command
     - npm-test
 ```
-Note that we use the `node.js` box and, as said, make use of `wercker/mongodb` that provides us with the `WERCKER_MONGODB_HOST` environment variable that we can use as our connection string later on. As mentioned, visit our [dev center](http://devcenter.wercker.com/articles/services/) for more information on services and the [wercker.yml](http://devcenter.wercker.com/articles/werckeryml/).
+Note that we use the `node.js` box and, as said, make use of `wercker/mongodb` that provides us with the `WERCKER_MONGODB_HOST` environment variable that we can use as our connection string later on. As mentioned, visit our [dev center](/articles/services/) for more information on services and the [wercker.yml](/articles/werckeryml/).
 
 ### Writing our tests
 

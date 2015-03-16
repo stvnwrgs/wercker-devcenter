@@ -50,7 +50,7 @@ If the `wercker.yml` is not present we will try to detect the programming langua
 
 ![image](http://f.cl.ly/items/3V33302R3W1F3z03461m/Screen%20Shot%202013-06-21%20at%2012.00.50%20PM.png)
 
-Again, you can read more on the `wercker.yml` file and its possibilities at [wercker.yml section](http://devcenter.wercker.com/werckeryml/).
+Again, you can read more on the `wercker.yml` file and its possibilities at [wercker.yml section](/werckeryml/).
 
 Finally when you're done we present you with a success dialog and allow you to make your project **public** on wercker, which is great for open source projects.
 

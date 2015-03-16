@@ -106,7 +106,7 @@ and the Memcached version we have installed.
 ## How the box gets its modules
 
 We will use [librarian-puppet](https://github.com/rodjek/librarian-puppet) to install the modules onto the box, before we provision them in the abovementioned **wercker-box.yml**.
-But how do we do this? We leverage the wercker build [pipeline](http://devcenter.wercker.com/articles/introduction/pipeline.html) to do so!
+But how do we do this? We leverage the wercker build [pipeline](/articles/introduction/pipeline.html) to do so!
 
 First we need to declare our puppet modules dependencies. Librarian-puppet does this through a **Puppetfile** that should look as follows:
 
@@ -120,7 +120,7 @@ mod "memcached",
 
 In this file we declare both an NTP module and of course the Memcached module.
 
-Now, we need a [wercker.yml](http://devcenter.wercker.com/articles/werckeryml/) file like any other application on wercker, so we can install the modules declared above. Create this file with the following content:
+Now, we need a [wercker.yml](/articles/werckeryml/) file like any other application on wercker, so we can install the modules declared above. Create this file with the following content:
 
 ``` yaml
 box: mies/librarian-puppet@0.0.2

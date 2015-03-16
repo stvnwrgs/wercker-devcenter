@@ -20,7 +20,7 @@ Heroku’s Adam Wiggins said it best: "Web UIs are great for many things, but co
 
     pip install wercker
 
-Note: you can read the [Wercker CLI Installation](http://devcenter.wercker.com/articles/cli/installation.html) page on our devcenter for more details.
+Note: you can read the [Wercker CLI Installation](/articles/cli/installation.html) page on our devcenter for more details.
 
 ## Adding your Go project to Heroku
 

@@ -8,11 +8,11 @@ In this article we explain how to deploy your applications with wercker and [Cap
 
 * Basic knowledge on Ruby and Capistrano
 * You have [registered for a wercker account](https://app.wercker.com/users/new) and [signed in](https://app.wercker.com/sessions/new)
-* You have [added your application to wercker](http://devcenter.wercker.com/articles/gettingstarted/web.html)
+* You have [added your application to wercker](/articles/gettingstarted/web.html)
 
 ## The wercker.yml file
 
-The *wercker.yml* file is the mechanism that allows you to define your environment on wercker; encompassing the programming language, any services you need such as databases and queues and of cource the build and deploy steps that specify the delivery pipeline for your application. For more information see the article on *wercker.yml* on our [dev center](http://devcenter.wercker.com/articles/werckeryml/).
+The *wercker.yml* file is the mechanism that allows you to define your environment on wercker; encompassing the programming language, any services you need such as databases and queues and of cource the build and deploy steps that specify the delivery pipeline for your application. For more information see the article on *wercker.yml* on our [dev center](/articles/werckeryml/).
 
 We’ll start by creating a `wercker.yml` in the root of your repository. For now we’ll just specify the box. This will create a Ruby 1.9.3 environment (which is the default version) for us to work in. Make sure you indent your wercker.yml file correctly in the subsequent steps.
 
@@ -39,7 +39,7 @@ build:
 
 </br>
 
-If you want to do some custom action or run tests you can do so after the bundle-install step. For this tutorial we are focussing on packiging and deploying, so we haven’t included any other steps. See the [Ruby language guide](http://devcenter.wercker.com/articles/languages/ruby.html) on our dev center for more information on build steps such as `rake`.
+If you want to do some custom action or run tests you can do so after the bundle-install step. For this tutorial we are focussing on packiging and deploying, so we haven’t included any other steps. See the [Ruby language guide](/articles/languages/ruby.html) on our dev center for more information on build steps such as `rake`.
 
 The last step of our build is to package everything using the bundle package step. This step will copy all .gem files that are specified in the Gemfile.lock file and copy them in the ./vendor/cache folder. The next time bundle install will be used it will check the vendor/cache folder and use the files without downloading them from [rubygems.org](http://rubygems.org) or the git repositories. This can be very handy when rubygems.org is down or when a certain gem has been removed from rubygems.org. Also heavily firewalled servers don’t have to make any outbound connection (you do have to use bundle install using `--local`, to make sure it doesn’t check rubygems.org).
 

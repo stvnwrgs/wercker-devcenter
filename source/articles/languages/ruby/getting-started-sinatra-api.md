@@ -179,7 +179,7 @@ Heroku dashboard or via the Heroku CLI:
 ```
 
 You can now add your project to wercker via the [wercker command line
-interface](http://devcenter.wercker.com/articles/cli):
+interface](/articles/cli):
 
 ```
  $ wercker create

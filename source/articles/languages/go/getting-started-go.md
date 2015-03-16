@@ -105,15 +105,15 @@ git commit -am 'init'
 
 ## Adding our app to wercker
 
-Now we are ready to test and build our application with wercker. Add your project to wercker either via the [command line](http://devcenter.wercker.com/articles/gettingstarted/cli.html) [interface](http://devcenter.wercker.com/articles/cli/) or via the [web interface](http://devcenter.wercker.com/articles/gettingstarted/web.html).
+Now we are ready to test and build our application with wercker. Add your project to wercker either via the [command line](/articles/gettingstarted/cli.html) [interface](/articles/cli/) or via the [web interface](/articles/gettingstarted/web.html).
 
-Now create a file called `wercker.yml`. The [wercker.yml](http://devcenter.wercker.com/articles/werckeryml/) file describes your build and deployment pipeline on wercker. For this simple application we just need to let wercker now, that you have a `golang` project and want to make use of the golang box. Add the following line to your `wercker.yml` file:
+Now create a file called `wercker.yml`. The [wercker.yml](/articles/werckeryml/) file describes your build and deployment pipeline on wercker. For this simple application we just need to let wercker now, that you have a `golang` project and want to make use of the golang box. Add the following line to your `wercker.yml` file:
 
 ``` yaml
 box: pjvds/golang
 ```
 
-You can read more about the `werkcer.yml` file on our [dev center](http://devcenter.wercker.com/articles/werckeryml/).
+You can read more about the `wercker.yml` file on our [dev center](/articles/werckeryml/).
 
 By default the golang box does the following:
 

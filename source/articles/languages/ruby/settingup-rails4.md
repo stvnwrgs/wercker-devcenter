@@ -108,7 +108,7 @@ Git remote heroku added
 
 ### Setting up our wercker.yml file
 
-The [wercker.yml](http://devcenter.wercker.com/articles/werckeryml/) file is a simple but powerful way to set up your build and deployment pipeline. Add a file called `wercker.yml` to your repository with the following contents:
+The [wercker.yml](/articles/werckeryml/) file is a simple but powerful way to set up your build and deployment pipeline. Add a file called `wercker.yml` to your repository with the following contents:
 
 ``` yaml
 box: wercker/ubuntu12.04-ruby2.0.0
@@ -127,7 +127,7 @@ Commit and push your changes to [GitHub](http://github.com) or [Bitbucket](http:
 
 ### Adding our application to wercker
 
-You can now either add your application to wercker via the [command line interface](http://devcenter.wercker.com/articles/gettingstarted/cli.html) or via the [web ui](http://devcenter.wercker.com/articles/gettingstarted/web.html). We will be using the [CLI](http://devcenter.wercker.com/articles/cli/) which is a Python application that you can install via:
+You can now either add your application to wercker via the [command line interface](/articles/gettingstarted/cli.html) or via the [web ui](/articles/gettingstarted/web.html). We will be using the [CLI](/articles/cli/) which is a Python application that you can install via:
 
 ``` bash
 pip install wercker
@@ -199,7 +199,7 @@ wercker queue
 ```
 Your application should now be alive and kicking on Heroku!
 
-Below is a complete [wercker.yml](/articles/werckeryml) created by [Frans Krojegård](https://twitter.com/frunns) that uses the wercker Ruby 2.0 [box](https://github.com/wercker/box-ubuntu12.04-ruby2.0.0), a Postgres [service](http://devcenter.wercker.com/articles/services/) and contains [Rake](http://rake.rubyforge.org/) task that bootstraps his database. Finally, he runs his rspec tests using `bundle exec rspec`. For deployment, he leverages the `heroku-deploy` step, after which he runs a database migration script.
+Below is a complete [wercker.yml](/articles/werckeryml) created by [Frans Krojegård](https://twitter.com/frunns) that uses the wercker Ruby 2.0 [box](https://github.com/wercker/box-ubuntu12.04-ruby2.0.0), a Postgres [service](/articles/services/) and contains [Rake](http://rake.rubyforge.org/) task that bootstraps his database. Finally, he runs his rspec tests using `bundle exec rspec`. For deployment, he leverages the `heroku-deploy` step, after which he runs a database migration script.
 
 ```yaml
 box: wercker/ubuntu12.04-ruby2.0.0
