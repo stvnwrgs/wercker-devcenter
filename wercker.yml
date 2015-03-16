@@ -9,6 +9,10 @@ build:
         - script:
             name: middleman build
             code: bundle exec middleman build --verbose --no-clean
+
+        - script:
+            name: export urls
+            code: ./export_urls.sh "build"
 deploy:
     steps:
         - s3sync:
