@@ -82,7 +82,7 @@ information`.
 
 Caution: All code inside the code tag are sent line by line. This means that any bash
 commands (such as `if [ ... ]; then ....; fi;` need to be placed in a single
-line and you need to make that you add the trailing semicolons.
+line and you need to make sure that you add the trailing semicolons.
 
 ```yaml
     - script:
